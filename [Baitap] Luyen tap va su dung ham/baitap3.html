@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bai1
+        let a = +prompt("Nhập số thứ 1");
+        let b = +prompt("Nhập số thứ 2");
+        let result = 0
+        inputNumber(a, b)
+        function inputNumber(num1, num2) {
+            if (num1 > num2) {
+                console.log("Số thứ 1 lớn hơn số thứ 2");
+            } else if (num1 < num2) {
+                result = num1 + num2
+                console.log("Tổng của 2 số là: " + result);
+            }
+        }
+        
+    </script>
+</body>
+</html>
