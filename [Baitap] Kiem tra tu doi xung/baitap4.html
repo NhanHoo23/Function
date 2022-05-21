@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseArr(n) {
+            n = n.toString()
+            return n.split("").reverse().join("")
+        }
+
+        function checkReverseArr(n) {
+            let flag = 0
+            if(reverseArr(n) == n) {
+                flag = 1;
+            }
+            return flag;
+        }
+
+        let n = prompt("Nhập vào 1 chuỗi số hoặc chữ!")
+        if (checkReverseArr(n)) {
+            console.log(n + " là chuỗi đối xứng.");
+        } else {
+            console.log(n + " không phải là chuỗi đối xứng.");
+        }
+    </script>
+</body>
+</html>
