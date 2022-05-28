@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý bán hàng</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="AddNewProduct">
+        <div class="AddNewProduct-Heading">  
+            <h2>Add New Product</h2>
+        </div>
+        <div class="AddNewProduct-Body">
+            <input type="text" id="InputProduct" placeholder="New Product">
+            <button class="button" onclick="add()">Add</button>
+        </div>
+    </div>
+
+    <div class="DisplayAllProduct">
+        <div class="DisplayAllProduct-Heading">
+            <h2>Display All Product</h2>
+        </div>
+        <div class="DisplayAllProduct-Body">
+            <table class="ProductList">
+                <thead>
+                    <tr>
+                        <th style="width: 50px; text-align:left">No</th>
+                        <th style="text-align:left">Product Name</th>
+                        <th></th>
+                        <th style="color: red;"></th>
+                    </tr>
+                </thead>
+                <tbody id="ProductList">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="data.js"></script>
+</html>
